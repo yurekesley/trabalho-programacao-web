@@ -1,0 +1,18 @@
+version: '3.1'
+
+services:
+  api:
+    container_name: carros-web-api
+    image: arros-web-api
+    ports:
+      - "8080:8080"
+    build:
+      context: ./carros-web-api/carros-web-api
+      dockerfile: Dockerfile
+    volumes:
+      - /data/spring-boot-app
+    networks:
+        - trabalho-network
+networks:
+  trabalho-network:
+    driver: bridge

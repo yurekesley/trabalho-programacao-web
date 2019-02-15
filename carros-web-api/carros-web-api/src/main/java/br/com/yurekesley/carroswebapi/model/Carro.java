@@ -24,7 +24,7 @@ public @Data class Carro {
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "carros_id_seq")
 	private Long id;
 	
-	@Column(name="planca", length= 7, nullable= false)
+	@Column(name="planca", length= 8, nullable= false)
 	private String placa;
 	
 	@Column(name="nome_proprietario", length= 255, nullable= false)
