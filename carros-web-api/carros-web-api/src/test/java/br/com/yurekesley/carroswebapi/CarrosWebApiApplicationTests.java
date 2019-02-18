@@ -8,7 +8,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest("application.test.properties")
-//@TestPropertySource(locations="classpath:application.test.properties")
+@TestPropertySource(locations="classpath:application.test.properties")
 public class CarrosWebApiApplicationTests {
 
 	@Test

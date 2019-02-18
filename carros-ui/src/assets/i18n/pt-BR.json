@@ -1,0 +1,246 @@
+{
+  "SISTEMA": "PDCA",
+  "BOTAO": {
+    "NOVO": "Novo",
+    "PESQUISAR": "Pesquisar",
+    "LIMPAR": "Limpar",
+    "ACAO": "Ação",
+    "OK": "OK",
+    "CONFIRMAR": "Confirmar ",
+    "CANCELAR": "Cancelar",
+    "VOLTAR": "Voltar",
+    "FECHAR": "Fechar",
+    "SALVAR": "Salvar",
+    "CONSULTAR": "CONSULTAR",
+    "VISUALIZAR": "Visualizar",
+    "EDITAR": "Editar",
+    "DELETAR": "Deletar"
+  },
+  "LABEL": {
+    "ACOES": "Ações",
+    "ADICIONAR": "Adicionar",
+    "ADICIONANDO": "Adicionando",
+    "ACAO": "Ação",
+    "OK": "OK",
+    "VOLTAR": "Voltar",
+    "FECHAR": "Fechar",
+    "SALVAR": "Salvar",
+    "META": "Meta",
+    "REALIZADO": "Realizado",
+    "CONFIRMAR": "Confirmar ",
+    "CANCELAR": "Cancelar",
+    "EQUIPES": "Equipes",
+    "INDICADORES": "Indicadores",
+    "ANO": "Ano",
+    "MES": "Mês",
+    "DATA": "Data",
+    "STATUS": "Status",
+    "COMENTARIO": "Comentário",
+    "RESPONSAVEL": "Responsável",
+    "EQUIPE": "Equipe",
+    "INDICADOR": "Indicador",
+    "REFERENCIA_INDICADOR": "Referência do  Indicador",
+    "GERENTE": "Gerente",
+    "MESANO": "Mês / Ano",
+    "ETAPA": "Etapa",
+    "ANALISE": "Análise",
+    "PERIODO": "Período",
+    "ACOES_ATRASADAS_TOTAIS": "Ações Atrasadas / Totais",
+    "ACOES_COMENTARIOS_GAV": "Ações / Comentários - GAV",
+    "OQUE": "O que ?",
+    "QUEM": "Quem ?",
+    "PORQUE_?": "Por quê ?",
+    "ONDE": "Onde ?",
+    "COMO": "Como ?",
+    "QUANDO": "Quando ?",
+    "JUSTIFICATIVA": "Justificativa",
+    "ESTRATIFICACAO": "Estratificação",
+    "QUANTIDADE": "Quantidade",
+    "%ACUMULADO": "% Acumulado",
+    "MAO_DE_OBRA": "Mão de Obra",
+    "MEIO_AMBIENTE": "Meio Ambiente",
+    "MATERIAIS": "Materiais",
+    "MAQUINAS": "Máquinas",
+    "MEDICAO": "Medição",
+    "METODOS": "Métodos",
+    "OBRIGATORIO": "Obrigatório",
+    "5_PORQUES": "5 Porques",
+    "TIPO_INVALIDO": "Tipo inválido",
+    "PORQUE": "Por quê",
+    "CAUSA_RAIZ": "Causa Raiz",
+    "CONSULTAR": "CONSULTAR",
+    "VISUALIZAR": "Visualizar",
+    "EDITAR": "Editar",
+    "DELETAR": "Deletar",
+    "APROVAR_PLANO_DE_ACAO": "Aprovar Plano de Ação",
+    "VISUALIZAR_ACOES": "Visualizar Ações",
+    "CHECAR_EXECUCAO": "Checar Execução",
+    "CONCLUIR_PDCA": "Concluir PDCA",
+    "PESQUISAR": "Pesquisar",
+    "LIMPAR": "Limpar",
+    "CONCLUIR": "Concluir",
+    "POSSIVEL_CAUSA_RAIZ": "Possível causa raiz"
+  },
+  "MENSAGEM": {
+    "NENHUM_REGISTRO_ENCONTRADO": "Nenhum registro encontrado",
+    "SALVO_COM_SUCESSO": "Salvo com sucesso",
+    "ATUALIZADO_COM_SUCESSO": "Atualizado com sucesso",
+    "DELETADO": "Deletado com Sucesso",
+    "EXCLUIDO_COM_SUCESSO": "Excluído com sucesso",
+    "EDITAR_PDCA": "O PDCA voltará para a situação EM CADASTRO. Tem certeza?",
+    "EXCLUIR_PDCA": "Serão excluídos os itens relacionados (Estratificações, Diagrama de ishikawa, Análise dos 5 porquês e Ações)",
+    "NENHUMA_INFORMACAO_DE_ATA_NO_PERIODO_INFORMADO": "Não exitem informações de Atas em anexo no período informado.",
+    "NENHUMA_ACAO_ENCONTRADA": "Nunhuma ação encontrada",
+    "NAO_EH_GERENTE_APROVADOR": "Você não é o gerente aprovador.",
+    "NAO_EH_GERENTE_REVISOR": "Você não é o gerente revisor.",
+    "NUMERO_MAXIMO_DE_ITEM_POR_CATEGORIA": "Numero máximo de item por categoria são {{quantidade}}",
+    "PARAMETRO_PASSADO_NA_URL_INCONSISTENTE": "O parametro: {{id}} passado na URL é inconsistente.",
+    "NECESSARIO_PDCA_ESTA_EM_CADASTRO": "É necessário o PDCA está EM CADASTRO.",
+    "PDCA_ESTA": "PDCA está {{status}}",
+    "CONCLUIR_PLANO_DE_ACAO_?": "Concluir plano de ação?",
+    "CONCLUIDO": "Concluído",
+    "EH_NECESSARIO_AO_MENOS_UMA_ACAO_CADASTRADA": "É necessário pelo menos uma ação cadastrada.",
+    "PDCA_DISPONIBILIZADO_PARA_CONCLUSAO": "PDCA disponibilizado para conclusão !",
+    "EXISTEM_ACOES_NAO_ANALIZADAS": "Existem ações não analizadas!",
+    "JA_CADASTRADO": "Já cadastrado",
+    "NENHUMA_INFORMACAO_CADASTRADA": "Nenhuma informação cadastrada.",
+    "TITULO": {
+      "INFORMACAO": "Informação",
+      "ANALIZE_CAUSAS_RAIZES": "Análise das causas-raizes",
+      "ACESSO_NAO_PERMITIDO": "Acesso não permitido",
+      "GERENTE_APROVADOR": "Gerente aprovador",
+      "GERENTE_REVISOR": "Gerente revisor",
+      "NAO_FOI_POSSIVEL_ADICIONAR": "Não foi possível adicionar",
+      "SUCESSO": "Registro",
+      "PLANO_DE_ACAO": "Plano de ação",
+      "EDICAO": "Edição",
+      "ESTRATIFICACAO": "Estratificação",
+      "NENHUMA_ACAO_CADASTRADA": "Nenhuma ação cadastrada.",
+      "PDCA": "PDCA"
+    }
+  },
+  "ERRO": {
+    "STATUS_PDCA_NULO": "Status do PDCA Nulo",
+    "OBJETO_NULO": "Objeto nulo",
+    "VALOR_NULO": "Valor nulo",
+    "VALOR_NAO_NUMERICO": "Valor não é um número",
+    "ESTATIFICACAO": {
+      "AUMENTO_PRIORIDADE_DE_NULO": "Não deve aumentar prioridade de uma estratificação NULA",
+      "DIMINUICAO_PRIORIDADE_DE_NULO": "Não deve diminuir prioridade de uma estratificação NULA",
+      "ADICIONAR_NULO": "Não deve adicionar estratificação NULA",
+      "ATUALIZAR_NULO": "Não deve atualizar estratificação NULA",
+      "ATUALIZAR_SEM_ID": "Não deve atualizar estratificação sem ID",
+      "EXCLUIR_NULO": "Não deve excluir estratificação NULA"
+    },
+    "PDCA": {
+      "EXCLUIR_NULO": "Não deve excluir PDCA NULO"
+    }
+  },
+  "PDCA": {
+    "PLANEJAR": "P - Planejar"
+  },
+  "ICADASTROSERVICE": {
+    "PORQUE": {
+      "MENSAGEM_DE_AJUDA": "Após a identificação e categorização, utilizaremos a técnica dos 5 por quês para encontrarmos as causas-raizes dos problemas e propormos melhorias.",
+      "MENSAGEM_DE_EXCLUSAO": "Ao excluir, serão excluídos os Porquês e ações relacionadas."
+    },
+    "ESTRATIFICACAO": {
+      "MENSAGEM_DE_AJUDA": "Esta etapa devemos investigar as características específicas do problema com uma visão ampla e sob vários pontos de vista. Desdobrar o problema em problemas menores que podem ser mais facilmente resolvidos.",
+      "MENSAGEM_DE_EXCLUSAO": "Serão excluídos os itens relacionados (Diagrama de ishikawa, Análise dos 5 porquês e Ações) além da estratificação"
+    }
+  },
+  "PAGINA": {
+    "SELECAO_INDICADOR": {
+      "TITULO": "Seleção de Indicador",
+      "HELP": "Nesta etapa, iremos definir o indicador a ser analisado.",
+      "TEXTO": "Agora que já sabemos qual fenômeno iremos analisar, vamos verificar o que aconteceu nesses últimos meses."
+    },
+    "VISUALIZAR": {
+      "TITULO": "Visualizar PDCA",
+      "SUBTITULO": {
+        "STATUS_PDCA": "Status PDCA",
+        "META_REALIZADO": "Meta / Realizado",
+        "PLANO_DE_ACAO": "Plano de ação",
+        "PARECER_VERIFICACAO": "Parecer da Verificação",
+        "COMENTARIO_FINAL": "Comentário Final"
+      }
+    },
+    "CONCLUIR_PDCA": {
+      "TITULO": "Concluir PDCA"
+    },
+    "VISUALIZAR_ACOES": {
+      "TITULO": "AÇÕES DO PDCA",
+      "NAO_INICIADA": "NÃO INICIADA",
+      "EM_EXECUCAO": "EM EXECUÇÃO",
+      "CONCLUIDA": "CONCLUIDA",
+      "STATUS_COMENTARIOS": "STATUS / COMENTÁRIOS",
+      "MSG_SEM_RESULTADO": "Não encontramos ações para os filtros preenchidos."
+    },
+    "APROVAR_PLANO_DE_ACAO": {
+      "TITULO": "Aprovar Plano de Ação",
+      "SUBTITULO": {
+        "ISHIKAWA": "Analizar problemas com Diagrama de Ishikawa",
+        "CAUSA_RAIZ": "Análise das possíveis Causas-Raízes"
+      },
+      "MENSAGEM": {
+        "PLANO_DE_ACAO_APROVACO": "PDCA será disponibilizado para execução.",
+        "EM_EXECUCAO": "PDCA Em Execução",
+        "PDCA_SERA_REPROVADO": "PDCA será reprovado.",
+        "PDCA_DISPONIBILIZADO": "Plano de Ação não disponibilizado para aprovação",
+        "REPROVADO": "PDCA Reprovado"
+      },
+      "ERRO": {
+        "ACOES_NAO_ANALIZADAS": "Existem ações não analizadas."
+      },
+      "MODAL": {
+        "JUSTIFICATIVA": {
+          "TITULO": "Justificativa da Reprovação da Ação."
+        }
+      }
+    },
+    "PLANO_DE_ACAO": {
+      "TITULO": "Plano de Ação",
+      "HELP": {
+        "TITULO": "Plano de Ação",
+        "TEXTO": "Com as possíveis melhorias identificadas, definiremos o plano de ação."
+      },
+      "MODAL": {
+        "CONCLUSAO": {
+          "TITULO": "Plano de Ação",
+          "TEXTO": "Informe o gerente que aprovará o plano de ação: ",
+          "CONFIRMACAO": "Plano de ação disponibilizado para aprovação!"
+        }
+      }
+    },
+    "REGISTRAR_RESULTADO": {
+      "TITULO": "Checar Execução",
+      "SUBTITULO": {
+        "PARECER_DA_VERIFICACAO": "Parecer da Verificação",
+        "META_REALIZADO": "Meta / Realizado",
+        "PLANO_DE_ACAO": "Plano de ação",
+        "PARECER_VERIFICACAO": "Parecer da Verificação",
+        "COMENTARIO_FINAL": "Comentário Final"
+      }
+    },
+    "CAUSA_RAIZ": {
+      "ESTRATIFICACAO": "Estratificacao"
+    },
+    "CINCO_PORQUES": {
+      "ACOES": "Ações",
+      "PDCA": "PDCA",
+      "OQUE": "O Que?",
+      "QUEM": "Quem?",
+      "PORQUE": "Por Quê?",
+      "ONDE": "Onde?",
+      "COMO": "Como?",
+      "QUANDO": "Quando?",
+      "VINCULAR": "Vincular",
+      "NENHUMA_ACAO_DISPONIVEL": "Nenhuma ação disponível",
+      "ADICIONAR_NOVA_ACAO": "ADICIONAR NOVA AÇÃO",
+      "VINCULAR_A_UMA_ACAO_DESTE_PDCA": "VINCULAR A UMA AÇÃO DESTE PDCA",
+      "VINCULAR_A_UMA_ACAO_DE_OUTRO_PDCA": "VINCULAR A UMA AÇÃO DE OUTRO PDCA",
+      "NOVA_ACAO": "NOVA AÇÃO",
+      "MENSAGEM_EXCLUIR_PORQUE": "Ao excluir um Porquê, serão excluídos os itens relacionados(Porquê, Possíveis Melhorias e Ações)"
+    }
+  }
+}
