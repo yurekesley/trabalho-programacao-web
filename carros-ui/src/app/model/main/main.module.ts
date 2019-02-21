@@ -1,3 +1,4 @@
+import { FooterModule } from './../../componentes/footer/footer.module';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule
@@ -51,6 +52,8 @@ const modulos = [
     MatTooltipModule,
     MatCheckboxModule,
     MatNativeDateModule,
+
+    FooterModule
 ];
 
 @NgModule({
