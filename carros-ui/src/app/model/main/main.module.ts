@@ -1,3 +1,4 @@
+import { NavBarModule } from './../../componentes/nav-bar/nav-bar.module';
 import { FooterModule } from './../../componentes/footer/footer.module';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
@@ -53,6 +54,7 @@ const modulos = [
     MatCheckboxModule,
     MatNativeDateModule,
 
+    NavBarModule,
     FooterModule
 ];
 

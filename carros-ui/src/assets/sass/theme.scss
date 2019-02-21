@@ -39,6 +39,7 @@ $mat-carros: (
 $app-primary: mat-palette($mat-carros);
 $app-accent:  mat-palette($mat-pink, 500, 900, A100);
 $app-warn:    mat-palette($mat-deep-orange);
+
 $carro-app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
 @include angular-material-theme($carro-app-theme);
 

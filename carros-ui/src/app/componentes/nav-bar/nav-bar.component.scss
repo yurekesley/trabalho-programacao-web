@@ -1,0 +1,116 @@
+@import './../../../assets/sass/theme.scss';
+
+.mat-toolbar {
+  position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+
+.mat-toolbar-row {
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,0.26);
+  a {
+  color: #fff;
+    height: 100%;
+    align-items: center;
+    display: flex;
+  }
+}
+
+.menu {
+	z-index: 999;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: transparent;
+	.sub-menu {
+	  	margin: 0;
+	  	padding: 0;
+		list-style: none;
+		background:  mat-color($mat-carros, 500);
+  		position: absolute;
+  		min-width: 100%;
+
+		visibility: hidden;
+		opacity: 0;
+		left: 0;
+		transform: translateX(-1em);
+		z-index: -1;
+		transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+	    li {
+			&::after {
+				height: 2px;
+				margin-top: -2px;
+			}
+	    }
+
+  		li:hover {
+		  background: rgba(0,0,0,0.1);
+		}
+
+		a {
+			padding: 0.5rem 1rem;
+		}
+		.sub-menu {
+		  top: 0;
+		  left: 100%;
+		}
+	}
+	a {
+		text-decoration: none;
+		display: block;
+		padding: 1rem;
+		color: #fff;
+		font-family: sans-serif;
+		font-size: 1rem;
+		text-transform: uppercase;
+	    font-family: $font-principal;
+	    cursor: pointer;
+	}
+	li {
+		&::after {
+	    	margin-top: -4px;
+			content: '';
+			display: block;
+			position: relative;
+			width: 0;
+			height: 4px;
+			background: #fff;
+			transition: width .3s;
+		}
+		&:hover::after, &:focus::after {
+		    width: 100%;
+		}
+
+		position: relative;
+	    transition: background-color 0.2s ease;
+	    height: 100%;
+	}
+}
+.menu > li {
+  float: left;
+}
+.menu > li:hover {
+	background: mat-color($mat-carros, 500);
+}
+.menu li:hover > .sub-menu, .menu li:focus > .sub-menu {
+    visibility: visible;
+	opacity: 1;
+	z-index: 1;
+	transform: translateX(0%);
+	transition-delay: 0s, 0s, 0.3s;
+}
+
+.clearfix:after{
+  content: '.';
+  display: block;
+  clear: both;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
