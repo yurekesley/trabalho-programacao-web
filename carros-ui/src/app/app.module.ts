@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { environment as env } from '../environments/environment';
+import { MainModule } from './model/main/main.module';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { environment as env } from '../environments/environment';
   ],
   imports: [
     BrowserModule,
+    MainModule.forRoot(env),
     AppRoutingModule
   ],
   providers: [],
