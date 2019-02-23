@@ -12,14 +12,7 @@ export class NavBarComponent implements OnInit {
 
   @Input() mostrarMenu = true;
 
-  @Input() menu: MenuItem[] = [
-    {titulo: 'MENU 1', url: 'teste1', menus: [
-      {titulo: 'MENU 1.2', url: 'teste1', menus: null}
-    ]},
-    {titulo: 'MENU 2', url: 'teste2', menus: []},
-    {titulo: 'MENU 3', url: 'teste3', menus: []},
-  ];
-
+  @Input() menu: MenuItem[];
 
   ngOnInit() {
   }

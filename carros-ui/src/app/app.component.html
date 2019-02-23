@@ -1,7 +1,5 @@
-<app-nav-bar></app-nav-bar>
+<app-nav-bar [menu]="menu"></app-nav-bar>
 
-<div class="container">
-  <router-outlet></router-outlet>
-</div>
+<router-outlet></router-outlet>
 
 <app-footer [ano]="'2019'" [versao]="'1.0.0'"> </app-footer>

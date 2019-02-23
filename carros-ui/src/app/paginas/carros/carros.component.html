@@ -1,3 +1,36 @@
-<p>
-  carros works!
-</p>
+ <div class="container">
+   <div class="row">
+     <app-tabela [lista]="carros">
+        <app-coluna valorCabecalho="Placa" atributo="placa"></app-coluna>
+        <app-coluna valorCabecalho="Proprietário" atributo="nomeProprietario"></app-coluna>
+        <app-coluna valorCabecalho="Implacamento" atributo="dataImplacamento">
+            <ng-template let-item="item">
+             {{ item.dataImplacamento | date: 'dd/MM/yyyy' }}
+            </ng-template>
+        </app-coluna>
+        <app-coluna valorCabecalho="IPVA" atributo="valorIpva"></app-coluna>
+
+        <app-coluna valorCabecalho="Ações">
+            <ng-template let-item="item">
+                <button mat-icon-button [matMenuTriggerFor]="menu">
+                    <mat-icon>more_vert</mat-icon>
+                  </button>
+                  <mat-menu #menu="matMenu">
+                    <button mat-menu-item>
+                      <mat-icon>edit</mat-icon>
+                      <span>Editar</span>
+                    </button>
+                    <button mat-menu-item>
+                        <mat-icon>delete</mat-icon>
+                        <span>Deletar</span>
+                      </button>
+                  </mat-menu>
+
+            </ng-template>
+        </app-coluna>
+
+     </app-tabela>
+   </div>
+ </div>
+
+

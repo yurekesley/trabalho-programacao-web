@@ -1,15 +1,11 @@
-import { CarrosComponent } from './carros.component';
+import { CarrosNovoComponent } from "./carros-novo.component";
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
     path: '',
-    component: CarrosComponent
-  },
-  {
-    path: 'novo',
-    loadChildren: './carros-novo/carros-novo.module#CarrosNovoModule'
+    component: CarrosNovoComponent
   },
 ];
 
@@ -17,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class CarrosRoutingModule { }
+export class CarrosNovoRoutingModule { }
