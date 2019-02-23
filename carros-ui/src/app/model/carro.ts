@@ -2,6 +2,6 @@ export interface Carro {
   id: number;
   placa: string;
   nomeProprietario: string;
-  dataImplacamento: Date;
+  dataEmplacamento: Date;
   valorIpva: number;
 }

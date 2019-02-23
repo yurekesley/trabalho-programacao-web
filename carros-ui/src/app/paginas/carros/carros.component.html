@@ -3,9 +3,9 @@
      <app-tabela [lista]="carros">
         <app-coluna valorCabecalho="Placa" atributo="placa"></app-coluna>
         <app-coluna valorCabecalho="Proprietário" atributo="nomeProprietario"></app-coluna>
-        <app-coluna valorCabecalho="Implacamento" atributo="dataImplacamento">
+        <app-coluna valorCabecalho="Emplacamento" atributo="dataEmplacamento">
             <ng-template let-item="item">
-             {{ item.dataImplacamento | date: 'dd/MM/yyyy' }}
+             {{ item.dataEmplacamento | date: 'dd/MM/yyyy' }}
             </ng-template>
         </app-coluna>
         <app-coluna valorCabecalho="IPVA" atributo="valorIpva"></app-coluna>

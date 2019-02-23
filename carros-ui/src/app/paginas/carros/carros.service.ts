@@ -16,5 +16,9 @@ export class CarrosService {
    return this.http.getByID<Carro>('carros', id);
   }
 
+  salvar(carro: Carro): Observable<Carro> {
+   return this.http.post('carros', carro);
+  }
+
 
 }

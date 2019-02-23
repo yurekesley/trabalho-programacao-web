@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 import br.com.yurekesley.carroswebapi.service.IGenericService;
 
+@CrossOrigin
 public abstract class GenericController<T, ID> implements IGenericController<T, ID> {
 
 	@Autowired
@@ -46,6 +47,7 @@ public abstract class GenericController<T, ID> implements IGenericController<T, 
 
 	@Override
 	@PostMapping
+	@CrossOrigin
 	@ResponseStatus(HttpStatus.CREATED)
 	public void save(@RequestBody T t) {
 		this.service.save(t);

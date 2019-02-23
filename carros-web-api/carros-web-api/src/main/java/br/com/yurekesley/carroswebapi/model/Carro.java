@@ -32,7 +32,7 @@ public @Data class Carro {
 	
 	@Temporal(TemporalType.DATE)
 	@Column(name = "data_implacameno", nullable = true)
-	private Date dataImplacamento;
+	private Date dataEmplacamento;
 	
 	@Column(name = "valor_ipva")
 	private BigDecimal valorIpva;

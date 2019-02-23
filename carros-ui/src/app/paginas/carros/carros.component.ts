@@ -20,19 +20,18 @@ export class CarrosComponent implements OnInit {
     this.service.get().subscribe(carros => {
       this.carros = [...carros ,  {
         id: 1,
-        dataImplacamento: new Date(),
+        dataEmplacamento: new Date(),
         nomeProprietario: 'Yure Kesley',
         placa: 'HVA-0830',
         valorIpva: 250.85
       },
       {
-        id: 1,
-        dataImplacamento: new Date(),
+        id: 2,
+        dataEmplacamento: new Date(),
         nomeProprietario: 'Yure Kesley',
         placa: 'HVA-0830',
         valorIpva: 250.85
       }];
     });
   }
-
 }
