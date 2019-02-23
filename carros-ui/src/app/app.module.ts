@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { environment as env } from '../environments/environment';
-import { MainModule } from './model/main/main.module';
+import { MainModule } from './module/main/main.module';
 
 @NgModule({
   declarations: [

@@ -28,7 +28,7 @@
 	  	margin: 0;
 	  	padding: 0;
 		list-style: none;
-		background:  mat-color($mat-carros, 500);
+		background:  mat-color($mat-carros, 800);
   		position: absolute;
   		min-width: 100%;
 
@@ -94,7 +94,7 @@
   float: left;
 }
 .menu > li:hover {
-	background: mat-color($mat-carros, 500);
+	background: mat-color($mat-carros, 800);
 }
 .menu li:hover > .sub-menu, .menu li:focus > .sub-menu {
     visibility: visible;

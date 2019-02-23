@@ -22,6 +22,7 @@ public abstract class GenericController<T, ID> implements IGenericController<T, 
 
 	@GetMapping
 	@Override
+	@CrossOrigin
 	@ResponseStatus(HttpStatus.OK)
 	public List<T> findAll() {
 		return this.service.findAll();
