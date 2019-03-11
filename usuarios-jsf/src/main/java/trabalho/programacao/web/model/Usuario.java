@@ -1,36 +1,68 @@
 package trabalho.programacao.web.model;
 
-public class Usuario {
+import java.io.Serializable;
+import java.util.Date;
+
+public class Usuario extends BaseModel implements Serializable {
+
+	public Usuario (String nome, String email) {
+		this.nome = nome;
+		this.email = email;
+	}
+	
+	
+	/**
+	 * serialVersionUID.
+	 */
+	private static final long serialVersionUID = -3064306490724801147L;
+
+	/**
+	 * Nome reduzido do usuario.
+	 */
+	private String nomeReduzido;
 
 	private String nome;
+	
+	
+	/**
+	 * Nome completo do usuario.
+	 */
+	private String nomeCompleto;
 
+	/**
+	 * Email do usuario.
+	 */
 	private String email;
 
-	private String sexo;
+	/**
+	 * Senha
+	 */
+	private String senha;
 
-	public Usuario() {
-		super();
+	/**
+	 * CPF do usuario.
+	 */
+	private String cpf;
+
+	/**
+	 * Data de nascimento.
+	 */
+	private Date dataNascimento;
+
+	public String getNomeReduzido() {
+		return nomeReduzido;
 	}
 
-	public Usuario(String nome, String email) {
-		super();
-		this.nome = nome;
-		this.email = email;
+	public void setNomeReduzido(String nomeReduzido) {
+		this.nomeReduzido = nomeReduzido;
 	}
 
-	public Usuario(String nome, String email, String sexo) {
-		super();
-		this.nome = nome;
-		this.email = email;
-		this.sexo = sexo;
+	public String getNomeCompleto() {
+		return nomeCompleto;
 	}
 
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setNomeCompleto(String nomeCompleto) {
+		this.nomeCompleto = nomeCompleto;
 	}
 
 	public String getEmail() {
@@ -41,12 +73,45 @@ public class Usuario {
 		this.email = email;
 	}
 
-	public String getSexo() {
-		return sexo;
+	public String getSenha() {
+		return senha;
 	}
 
-	public void setSexo(String sexo) {
-		this.sexo = sexo;
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public Date getDataNascimento() {
+		return dataNascimento;
+	}
+
+	public void setDataNascimento(Date dataNascimento) {
+		this.dataNascimento = dataNascimento;
+	}
+
+	public Usuario() {
+		super();
+	}
+
+	public Usuario(Long id) {
+		this();
+		setId(id);
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 }

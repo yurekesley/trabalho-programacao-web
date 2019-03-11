@@ -25,8 +25,8 @@ public class UsuarioServlet extends HttpServlet {
 			throws ServletException, IOException {
 
 		List<Usuario> usuarios = new ArrayList<Usuario>();
-		usuarios.add(new Usuario("Yure", "fabio@gmail.com"));
-		usuarios.add(new Usuario("Kesley", "maria@gmail.com"));
+		usuarios.add(new Usuario("Yure", "yure@gmail.com"));
+		usuarios.add(new Usuario("Kesley", "kesley@gmail.com"));
 
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
