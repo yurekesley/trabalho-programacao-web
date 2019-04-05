@@ -1,8 +1,8 @@
-import { CarrosService } from "./../carros.service";
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, AbstractControl } from '@angular/forms';
 import { marcarComoTocado, error } from 'src/app/util/funcoes.util';
 import { Router } from '@angular/router';
+import { CarrosService } from '../carros.service';
 
 @Component({
   selector: 'app-carros-novo',

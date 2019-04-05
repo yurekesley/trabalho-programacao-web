@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Carro } from './../../model/carro';
 import { CarrosService } from './carros.service';
 import { Component, OnInit } from '@angular/core';
@@ -10,7 +11,9 @@ import { Component, OnInit } from '@angular/core';
 export class CarrosComponent implements OnInit {
 
   carros: Carro[];
-  constructor(private service: CarrosService) { }
+  constructor(
+      private service: CarrosService
+    , private route: Router) { }
 
   ngOnInit() {
     this.getCarros();
@@ -33,5 +36,9 @@ export class CarrosComponent implements OnInit {
         valorIpva: 250.85
       }];
     });
+  }
+
+  editar(carroId: number) {
+    this.route.navigate(['editar', carroId ]);
   }
 }
