@@ -32,7 +32,7 @@ public abstract class GenericController<T, ID> implements IGenericController<T, 
 	@GetMapping("/{id}")
 	@CrossOrigin
 	@Override
-	@ResponseStatus(HttpStatus.FOUND)
+	@ResponseStatus(HttpStatus.OK)
 	public T findById(@PathVariable ID id) {
 		return this.service.findById(id);
 	}
