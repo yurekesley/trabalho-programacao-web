@@ -40,13 +40,17 @@ export class CarrosNovoComponent implements OnInit {
 
     this.service.salvar(this.formCarro.value).subscribe(carro => {
       alert('Carro Salvo com Sucesso');
+      this.redirecionarInicio();
     });
   }
 
  public cancelar() {
-  this.router.navigate(['']);
+  this.redirecionarInicio();
  }
 
+ public redirecionarInicio() {
+  this.router.navigate(['/']);
+}
 
   public mostrarError(controll: AbstractControl): string {
     return error(controll);
