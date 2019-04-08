@@ -1,4 +1,4 @@
-import { NgModule, Inject } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { environment as env } from 'src/environments/environment';
 

@@ -3,7 +3,7 @@ import { HttpService } from './../../services/http.service';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
-@Injectable()
+@Injectable({ providedIn: 'root'})
 export class CarrosService {
   constructor(private http: HttpService) {
   }
@@ -18,6 +18,10 @@ export class CarrosService {
 
   salvar(carro: Carro): Observable<Carro> {
    return this.http.post('carros', carro);
+  }
+
+  atualizar(carro: Carro): Observable<Carro> {
+    return this.http.put('carros', carro);
   }
 
 

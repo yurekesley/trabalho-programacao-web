@@ -21,24 +21,11 @@ export class CarrosComponent implements OnInit {
 
   getCarros() {
     this.service.get().subscribe(carros => {
-      this.carros = [...carros ,  {
-        id: 1,
-        dataEmplacamento: new Date(),
-        nomeProprietario: 'Yure Kesley',
-        placa: 'HVA-0830',
-        valorIpva: 250.85
-      },
-      {
-        id: 2,
-        dataEmplacamento: new Date(),
-        nomeProprietario: 'Yure Kesley',
-        placa: 'HVA-0830',
-        valorIpva: 250.85
-      }];
+     this.carros = carros;
     });
   }
 
   editar(carroId: number) {
-    this.route.navigate(['editar', carroId ]);
+    this.route.navigateByUrl(`carros/${carroId}/editar`);
   }
 }

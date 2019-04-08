@@ -20,6 +20,11 @@ export class HttpService {
     return this.http.post(url, t);
   }
 
+  put<T>(andPoint: string, t: T): Observable<any> {
+    const url = this.getUrl(andPoint);
+    return this.http.put(url, t);
+  }
+
   get<T>(andPoint: string): Observable<T[]> {
     const url = this.getUrl(andPoint);
     return this.http.get<T[]>(url);

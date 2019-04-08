@@ -1,3 +1,45 @@
-<p>
-  carros-editar works!
-</p>
+<div class="container">
+  <div class="row">
+      <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Cadastro de Carros</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+
+            <div class="row" [formGroup]="formCarro">
+              <div class="col">
+                  <mat-form-field>
+                  <input matInput placeholder="Placa" formControlName="placa">
+                  <mat-error >{{mostrarError(formCarro.get('placa'))}}</mat-error>
+                </mat-form-field>
+              </div>
+              <div class="col">
+                  <mat-form-field>
+                  <input matInput placeholder="Proprietário" formControlName="nomeProprietario">
+                  <mat-error >{{mostrarError(formCarro.get('nomeProprietario'))}}</mat-error>
+                </mat-form-field>
+              </div>
+              <div class="col">
+                <mat-form-field>
+                    <input matInput placeholder="Emplacamento" [matDatepicker]="picker" formControlName="dataEmplacamento">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                    <mat-error >{{mostrarError(formCarro.get('dataEmplacamento'))}}</mat-error>
+                  </mat-form-field>
+              </div>
+              <div class="col">
+                  <mat-form-field>
+                  <input matInput placeholder="IPVA R$" formControlName="valorIpva">
+                  <mat-error >{{mostrarError(formCarro.get('valorIpva'))}}</mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button (click)="atualizar()">Atualizar</button>
+            <button mat-button (click)="cancelar()">Cancelar</button>
+          </mat-card-actions>
+        </mat-card>
+  </div>
+</div>

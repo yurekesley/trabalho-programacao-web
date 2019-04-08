@@ -1,11 +1,15 @@
 import { CarrosEditarComponent } from './carros-editar.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { CarroResolver } from 'src/app/resolvers/carro.resolver';
 
 const routes: Routes = [
   {
     path: '',
-    component: CarrosEditarComponent
+    component: CarrosEditarComponent,
+    resolve: {
+      carro: CarroResolver
+    }
   },
 ];
 
