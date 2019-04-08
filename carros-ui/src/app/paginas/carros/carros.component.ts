@@ -28,4 +28,11 @@ export class CarrosComponent implements OnInit {
   editar(carroId: number) {
     this.route.navigateByUrl(`carros/${carroId}/editar`);
   }
+
+  deletar(carroId: number) {
+    this.service.deletar(carroId).subscribe(res => {
+      alert('Deletado com sucesso !!');
+      this.getCarros();
+    });
+  }
 }

@@ -30,6 +30,11 @@ export class HttpService {
     return this.http.get<T[]>(url);
   }
 
+  delete<T>(andPoint: string, ID: number): Observable<T[]> {
+    const url = this.getUrl(`${andPoint}/${ID}`);
+    return this.http.delete<T[]>(url);
+  }
+
   getByID<T>(andPoint: string, ID: number): Observable<T> {
     const url = this.getUrl(`${andPoint}/${ID}`);
     return this.http.get<T>(url);

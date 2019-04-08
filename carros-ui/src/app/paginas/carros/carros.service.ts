@@ -24,5 +24,8 @@ export class CarrosService {
     return this.http.put('carros', carro);
   }
 
+  deletar(id: number): Observable<any> {
+    return this.http.delete('carros', id);
+  }
 
 }
